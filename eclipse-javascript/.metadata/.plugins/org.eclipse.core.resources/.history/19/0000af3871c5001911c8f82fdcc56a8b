@@ -1,0 +1,24 @@
+*,html,body{
+	padding:0px;
+	margin:0px;
+}
+
+h1,h4{
+	color: blue;
+	text-align: center;
+}
+
+form{
+	padding-top:50px;
+	width: 300px;
+    margin: 0 auto;
+    
+	
+}
+
+input{
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

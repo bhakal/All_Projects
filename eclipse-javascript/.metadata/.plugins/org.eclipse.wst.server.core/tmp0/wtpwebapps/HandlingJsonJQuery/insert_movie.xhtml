@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type='text/javascript'>
+	 $(document).ready(function()	{
+		 $('#InsertButton').click(function()  {
+			var MSG = $("#Message").val();
+			var dataString = 'message='+ MSG;
+			 $.ajax({
+			 type: "POST",
+			 url: "InsertMovie",
+			 data: dataString,
+			 cache: false,
+			 success: function(data) {
+				 $("#Message").val('');
+				 $("#content").append(data)				 
+				 $("#Message").focus();
+			 }
+			 });
+			return false;
+		 });
+	 });
+</script>
+
+</head>
+<body>
+	<textarea id='Message'></textarea><br/>
+	<input type='button' value='Insert' id='InsertButton'/>
+	<div id='content'></div>
+</body>
+</html>

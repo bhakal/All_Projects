@@ -1,0 +1,26 @@
+*,html,body{
+	padding:0px;
+	margin:0px;
+}
+
+h1,h4{
+	color: blue;
+	text-align: center;
+}
+
+form{
+	padding-top:50px;
+	width: 300px;
+    margin: 0 auto;
+    border: medium;
+    border-color: #335bff;
+	
+}
+
+input{
+  width: 100%;
+  background-color:black;
+  color:white;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

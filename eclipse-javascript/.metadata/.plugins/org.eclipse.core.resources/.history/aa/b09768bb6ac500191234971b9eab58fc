@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href=css/style.css rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="maxresdefault">
+
+		<div class="container">
+			<div class="row">
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Movies</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+			<div class = "logos">
+				<p class="logo"><font color="white">My</font><font color="#00B4CC">Movie</font><font color="white">Mania</font></p>
+			
+			</div>
+			<div class="wrap">
+				<div class="search">
+					<input type="text" class="searchTerm" placeholder="Search..">
+					<button type="submit" class="searchButton">
+						<i class="fa fa-search"></i>
+					</button>
+
+				</div>
+			</div>
+		
+		<div class="images">
+			<div class="column">
+				<img src="images/1.jpg" class="grid" /> <img src="images/2.jpg"
+					class="grid" /> <img src="images/3.jpg" class="grid" /> <img
+					src="images/4.jpg" class="grid" /> <img src="images/5.jpg"
+					class="grid" />
+			
+				<img src="images/6.jpg" class="grid" /> <img src="images/7.jpg"
+					class="grid" /> <img src="images/8.jpg" class="grid" /> <img
+					src="images/9.jpg" class="grid" /> <img src="images/10.jpg"
+					class="grid" />
+			</div>
+		</div>
+			<footer>
+				<p>Copyright@MyMoviemania. All Rights Reserved</p>
+			</footer>
+		
+	</div>
+</body>
+</html>

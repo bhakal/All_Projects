@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Field Label Form Validation using a registration form</title>
+<script type="text/javascript" src="js_script/form_validation.js"></script>
+</head>
+<body onload="firstfocus()">
+	<h1>Registration Form</h1>
+	<h4>Use tab keys to move from one input field to the next</h4>
+	<form name="registration" method="post">
+		User Id:<input type="text" name="userid" size="12" onblur="userid_validation(5,12)"><br><br>
+		Password:<input type="password" name="passid" size="12" onblur="passid_validation(7,12)"><br><br>
+		Name:<input type="text" name="username" size="20" onblur="allLetters()"><br><br>
+		Address:<input type="text" name="address" size="20" onblur="alphanumeric()"><br><br>
+		<input type="button" name="submit" value="submit" onclick="click()"> 
+	</form>
+</body>
+</html>

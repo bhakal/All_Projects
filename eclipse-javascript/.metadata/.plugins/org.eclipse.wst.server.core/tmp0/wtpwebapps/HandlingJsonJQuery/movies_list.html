@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Using $.ajax calling GetMessages servlet then 
+	reading JSON data with $.each method and appending data 
+	into content div. 
+	 -->
+	<title>New document</title>
+	<meta name="generator" content="TSW WebCoder 2013">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		 $(document).ready(function()
+		 {
+		 $.ajax
+		 ({
+		 type: "GET",
+		 url: "GetMovies",
+		 dataType:"json",
+		 success: function(data) {
+		 if(data.MoviesList.length) {
+			 $.each(data.MoviesList, function(index,data) {
+				var msg_data="<div id='msg"+data.movie_id+"'>"+data.movie_name+"</div>";
+				 $(msg_data).appendTo("#content");
+			 });
+		 }
+		 else {
+		 	$("#content").html("No Results");
+		 }
+		 }
+		 });		 
+		 
+		return false;
+		 });		
+	</script>
+
+</head>
+<body>
+	<!-- <textarea id='Message'></textarea><br/>
+	<input type='button' value=' Update ' id='UpdateButton'/> -->
+	<div id='content'></div>
+
+
+</body>
+</html>
